@@ -6,11 +6,17 @@ Il programma stampa la somma di tutti i numeri inseriti.
 // Variables initialization
 const numbers_quantity = 5;
 var numbers_array = [];
+var current_number = 0;
 
 // Entering Inputs
-for (var i = 0; i < numbers_quantity; i++) {
-  var current_number = prompt('Enter a number.');
-  numbers_array.push(current_number);
+for (var i = 0; i < numbers_quantity && !isNaN(current_number); i++) {
+  current_number = parseFloat(prompt('Enter a number.'));
+  if (!isNaN(current_number)) {
+    numbers_array.push(current_number);
+  } else {
+    alert('The value entered is not a number. Please reload the page.');
+    console.log('One of the values entered is not a number. Please reload the page.');
+  }
 }
 
 // Check data in Console
