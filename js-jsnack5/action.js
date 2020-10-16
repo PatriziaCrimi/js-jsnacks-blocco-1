@@ -19,7 +19,7 @@ if (!isNaN(numbers_quantity)) {
     numbers_array.push(i+1);
   }
   // Cube calculation
-  for (var i = 0; i < numbers_array.length; i++) {
+  for (i = 0; i < numbers_array.length; i++) {
     var cube = Math.pow(numbers_array[i], power_exponent);
     console.log('The cube of ' + numbers_array[i] + ' is: ' + cube + '.');
     cubes_array.push(cube);
@@ -43,7 +43,7 @@ console.log(cubes_array);
 numbers_quantity = parseFloat(prompt('Enter the amount of numbers that you want to calculate the cube for. Please check the results in console.'));
 
 // Cube calculation starting from number 1 (not zero!)
-for (var i = 1; i <= numbers_quantity; i++) {
+for (i = 1; i <= numbers_quantity; i++) {
   cube = Math.pow(i, power_exponent);
   console.log('The cube of ' + i + ' is: ' + cube + '.');
 }

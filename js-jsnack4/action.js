@@ -46,8 +46,8 @@ if (odd_numbers_array.length === 0) {
 alert('Let\'s try again! You are going to enter ' + numbers_quantity + ' numbers.')
 
 // *********** Entering Inputs ***********
-for (var i = 0; i < numbers_quantity; i++) {
-  var current_number = parseFloat(prompt('Enter a number.'));
+for (i = 0; i < numbers_quantity; i++) {
+  current_number = parseFloat(prompt('Enter a number.'));
   if (!isNaN(current_number)) {
     /* Check odd number:
           remember that 1===true and 0===false

@@ -30,8 +30,8 @@ console.log(power_results_array);
 
 // *********** Power calculation ***********
 var check_limit = true;
-for (var i = 0; check_limit; i++) {
-  var power_exponent = i;
+for (i = 0; check_limit; i++) {
+  power_exponent = i;
   current_power_result = Math.pow(power_base, power_exponent);
   // Check for power result maximum 1000
   if (current_power_result < maximum_number) {

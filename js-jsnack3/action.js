@@ -30,7 +30,7 @@ console.log(numbers_array);
 
 // Calculating Sum
 var sum = numbers_array[0];
-for (var i = 1; i < numbers_array.length; i++) {
+for (i = 1; i < numbers_array.length; i++) {
   sum = sum + numbers_array[i];
 }
 // Print output
@@ -43,7 +43,7 @@ alert('The sum of the numbers you entered is: ' + sum + '.');
 // *********** Entering Inputs & Calculating Sum ***********
 sum = 0;
 
-for (var i = 0; i < numbers_quantity; i++) {
+for (i = 0; i < numbers_quantity; i++) {
   current_number = parseFloat(prompt('Enter a number.'));
   if (!isNaN(current_number)) {
     sum = sum + current_number;
@@ -63,9 +63,9 @@ alert('The sum of the numbers you entered is: ' + sum + '.');
 
 // *********** Entering Inputs & Calculating Sum ***********
 sum = 0;
-check_input = false;
+var check_input = false;
 
-for (var i = 0; i < numbers_quantity && !check_input; i++) {
+for (i = 0; i < numbers_quantity && !check_input; i++) {
   current_number = parseFloat(prompt('Enter a number.'));
   if (!isNaN(current_number)) {
     sum = sum + current_number;
